@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/">home</router-link> |
       <router-link to="/about">About</router-link>
-      <p>测试sourcetree</p>
+      <p>测试123sourcetree</p>
     </nav>
     <router-view/>
   </div>
