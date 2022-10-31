@@ -1,9 +1,0 @@
-diff a/vueclidemo/src/App.vue b/vueclidemo/src/App.vue	(rejected hunks)
-@@ -3,6 +3,7 @@
-     <nav>
-       <router-link to="/">跳转home</router-link> |
-       <router-link to="/about">跳转About</router-link>
-+      <p>测试sourcetree</p>
-     </nav>
-     <router-view/>
-   </div>

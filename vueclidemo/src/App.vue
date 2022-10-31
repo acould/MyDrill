@@ -1,33 +1,38 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">home</router-link> |
-      <router-link to="/about">About</router-link>
-      <p>测试123sourcetree</p>
-    </nav>
-    <router-view/>
+    <el-button type="success">成功按钮</el-button>
+    <el-switch
+      v-model="val"
+      active-color="#13ce66"
+      inactive-color="#ff4949"
+      @change="gaibian"
+    >
+    </el-switch>
   </div>
 </template>
 
+<script>
+export default {
+  name: "app",
+  components: {},
+  data() {
+    return {
+      val: true,
+    };
+  },
+  methods: {
+    gaibian() {
+      if (this.val == true) {
+       let yes = (this.val = 1);
+        console.log(yes, "哈哈");
+      } else {
+        console.log(2);
+      }
+    },
+  },
+  mounted() {},
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
